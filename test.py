@@ -90,6 +90,11 @@ def load(data):
 
     mycursor = mydb.cursor()
 
+
+
+    print("this is git test")
+
+
     for i in range(len(data)):
         sql = f"INSERT INTO yelp VALUES (\"{data[i][0]}\", {data[i][1]}, '{data[i][2]}', {data[i][3]}, '{data[i][4]}')"
         print(sql)
